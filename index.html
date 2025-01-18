@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal, Ledger, Trial Balance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Journal, Ledger, and Trial Balance</h1>
+      <form id="transaction-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="transaction">Financial Transaction:</label>
+        <input
+          type="text"
+          id="transaction"
+          name="transaction"
+          placeholder="e.g., Business started with cash $1000"
+          required
+        />
+
+        <button type="submit">Add Transaction</button>
+      </form>
+
+      <h2>Journal Entries</h2>
+      <table id="journal-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Particulars</th>
+            <th>Debit</th>
+            <th>Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Journal entries will appear here -->
+        </tbody>
+      </table>
+
+      <h2>Ledger</h2>
+      <div id="ledger-entries">
+        <!-- Ledger entries will appear here -->
+      </div>
+
+      <h2>Trial Balance</h2>
+      <table id="trial-balance-table">
+        <thead>
+          <tr>
+            <th>Account</th>
+            <th>Debit</th>
+            <th>Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Trial balance will appear here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
